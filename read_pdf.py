@@ -1,6 +1,6 @@
 from langchain_core.tools import tool
 import io
-import PyPDF2
+import pypdf
 import requests
 
 @tool
@@ -16,7 +16,7 @@ def read_pdf(url: str) -> str:
     try:
         response = requests.get(url)
         pdf_file = io.BytesIO(response.content)
-        pdf_reader = PyPDF2.PdfReader(pdf_file)
+        pdf_reader = pypdf.PdfReader(pdf_file)
         num_pages = len(pdf_reader.pages)
         text = ""
         for i, page in enumerate(pdf_reader.pages, 1):
