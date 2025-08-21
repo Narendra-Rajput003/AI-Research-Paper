@@ -46,6 +46,10 @@ This project leverages a sophisticated AI workflow built with:
 
 ## 🚀 Quick Start
 
+### 🌐 Live Demo
+
+**Try the application online:** [https://ai-research-paper-8z9u.onrender.com](https://ai-research-paper-8z9u.onrender.com)
+
 ### Prerequisites
 
 - Python 3.13 or higher
